@@ -87,6 +87,7 @@ namespace App1
         private async void InitializeCameraAsync()
         {
             var allVideoDevices = await DeviceInformation.FindAllAsync(DeviceClass.VideoCapture);
+            //总是获取不到摄像头
             DeviceInformation cameraDevice = allVideoDevices.FirstOrDefault();
             var mediaInitSettings = new MediaCaptureInitializationSettings { VideoDeviceId = cameraDevice.Id };
             MyMediaCapture = new MediaCapture();
