@@ -495,7 +495,7 @@ namespace App2
             {
                 return;
             }
-            string s = "";
+           
             try
             {
                 writer.WriteUInt32(writer.MeasureString(sendmsg));
